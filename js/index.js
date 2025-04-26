@@ -26,9 +26,11 @@ function randomSections(reset = false) {
     const section = document.getElementById(`section${i}`)
     const color = randomColor()
 
+    store[i] = { color, lock: false }
+
+    if (reset) lockOrUnlock(section, store[i], true)
     setColorsInSection(section, color, false, i)
 
-    store[i] = { color, lock: false }
   }
 
   localStorage.setItem("sections", JSON.stringify(store))
@@ -39,8 +41,17 @@ function loadColors(store) {
   const values = Object.values(store)
   for (let i = 0; i < 5; i++) {
     const section = document.getElementById(`section${i + 1}`)
-    setColorsInSection(section, values[i].color, values[i].lock, i + 1)
+    const sectionObj = values[i]
+
+    lockOrUnlock(section, sectionObj)
+    setColorsInSection(section, sectionObj.color, sectionObj.lock, i + 1)
   }
+}
+
+function lockOrUnlock(section, store, reset = false) {
+  if (reset) return section.classList.remove("lock")
+  if (store.lock) section.classList.add("lock")
+  else section.classList.remove("lock")
 }
 
 function handleLockerClick(index) {

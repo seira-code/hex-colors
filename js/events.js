@@ -18,7 +18,7 @@ document.addEventListener("keydown", (event) => {
     case "r":
       randomSections(true) // reset
       break;
-    case "к":
+    case "к": // reset
       randomSections(true)
       break;
 
