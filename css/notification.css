@@ -1,0 +1,18 @@
+.notification {
+  display: none;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 325px;
+  height: 50px;
+  margin-top: 50%;
+  padding: 10px;
+  z-index: 2;
+}
+
+.notification p {
+  font-size: 1.25em;
+  color: white
+}

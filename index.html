@@ -6,9 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HEX</title>
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="./css/notification.css">
 </head>
 
 <body>
+  <div class="notification">
+    <p>dsadsa</p>
+  </div>
+
+  <div class="modal" id="hello-modal"">
+    <div class=" modal__text">
+    <p><b>HEX GENERATOR</b></p>
+    <br><br>
+    <p>
+      SPACE = Generate new colors<br>
+      R = Reset all lockers and generate new colors
+    </p>
+  </div>
+  <div class="modal__buttons">
+    <button id="modal-close">Close</button>
+  </div>
+  </div>
+
   <div class="container">
     <div class="section" id="section1">
       <p></p>
@@ -34,6 +54,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chroma-js@2.4.2/chroma.min.js"></script>
   <script src="./js/index.js"></script>
+  <script src="./js/modals.js"></script>
   <script src="./js/events.js"></script>
 </body>
 

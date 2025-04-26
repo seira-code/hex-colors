@@ -1,0 +1,49 @@
+.blur {
+  filter: brightness(0.2);
+}
+
+.modal {
+  display: none;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 350px;
+  height: 300px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.modal__text {
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__buttons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 6rem;
+  height: 50px;
+}
+
+.modal__buttons button {
+  color: white;
+  height: 30px;
+  width: 100px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.modal__buttons button:hover {
+  background-color: rgba(25, 25, 25, 0.8);
+}

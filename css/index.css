@@ -3,14 +3,21 @@
   padding: 0;
   box-sizing: border-box;
   user-select: none;
-  font-size: 22px;
+  font-size: 16px;
   height: 100%;
   width: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
   display: flex;
   flex-direction: row;
+  z-index: 1;
 }
 
 .lock {
@@ -35,5 +42,8 @@
 }
 
 .section p {
+
+  text-transform: uppercase;
   cursor: pointer;
+  font-size: 1.4em;
 }

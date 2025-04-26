@@ -5,12 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let storage = JSON.parse(localStrg)
   if (Object.values(storage).length < 5) return randomSections()
 
+  toggleModal("hello-modal")
   loadColors(storage)
 })
 
 document.addEventListener("keydown", (event) => {
   const key = event.key.toLowerCase()
-  console.log(key)
   switch (key) {
     case " ": // SPACE
       randomSections()
@@ -26,3 +26,4 @@ document.addEventListener("keydown", (event) => {
       break;
   }
 })
+
