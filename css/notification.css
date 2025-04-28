@@ -4,6 +4,7 @@
   text-align: center;
   position: absolute;
   border: 1px solid white;
+  border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.8);
   width: 325px;
   height: 50px;

@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let storage = JSON.parse(localStrg)
   if (Object.values(storage).length < 5) return randomSections()
 
+  sendNotification("Hello!")
   toggleModal("hello-modal")
   loadColors(storage)
 })
