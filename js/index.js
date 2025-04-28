@@ -65,12 +65,3 @@ async function handleTextClick(text) {
   await navigator.clipboard.writeText(text)
   sendNotification("Copied")
 }
-
-function sendNotification(text) {
-  const element = document.querySelector(".notification")
-  const textElement = element.querySelector("p")
-  textElement.innerHTML = text
-  element.style.display = "flex"
-
-  setTimeout(() => element.style.display = "none", 1500);
-}
